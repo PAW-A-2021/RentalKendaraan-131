@@ -64,7 +64,6 @@ namespace RentalKendaraan.Controllers
             ViewData["CurrentFilter"] = searchString;
             int pageSize = 5;
             return View(await PaginatedList<Customer>.CreateAsync(menu.AsNoTracking(), pageNumber ?? 1, pageSize));
-
         }
 
         // GET: Customers/Details/5
